@@ -1,5 +1,8 @@
 package lolChampionshipSimulator.entities;
 
 public enum Regiao {
+	
+	BRASIL, AMERICA_DO_NORTE, AMERICA_DO_LATINA, EUROPA, CHINA, COREIA, SUDESTE_ASIATICO, TURQUIA, RUSSIA,
+	JAPAO, OCEANIA, VIETNAM;
 
 }
