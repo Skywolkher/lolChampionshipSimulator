@@ -2,17 +2,27 @@ package lolChampionshipSimulator.entities;
 
 public class Resultado {
 
-	private double resultadoDaPartida;
+	private Equipe equipeVencedora;
 	private Equipe equipeA;
 	private Equipe equipeB;
+	
+	public Resultado (Equipe equipeA, Equipe equipeB, Equipe equipeVencedora) {
+		this.equipeA = equipeA;
+		this.equipeB = equipeB;
+		this.equipeVencedora = equipeVencedora;
+	}
 	
 	public Resultado (Equipe equipeA, Equipe equipeB) {
 		this.equipeA = equipeA;
 		this.equipeB = equipeB;
 	}
 
-	public double getResultadoDaPartida() {
-		return resultadoDaPartida;
+	public Equipe getEquipeVencedora() {
+		return this.equipeVencedora;
+	}
+	
+	public void setEquipeVencedora(Equipe equipeVencedora) {
+		this.equipeVencedora = equipeVencedora;
 	}
 
 	public Equipe getEquipeA() {

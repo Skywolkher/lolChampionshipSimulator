@@ -1,6 +1,5 @@
 package lolChampionshipSimulator.entities;
 
-import lolChampionshipSimulator.entities.Nivel;
 import lolChampionshipSimulator.entities.Regiao;
 import lolChampionshipSimulator.entities.Jogador;
 import java.util.List;
@@ -10,11 +9,11 @@ public class Equipe {
 	
 	private String nomeDaEquipe;
 	private short anoDeFormacao;
-	private Nivel nivelTotalDaEquipe;
+	private double nivelTotalDaEquipe;
 	private Regiao regiaoDaEquipe;
 	private List<Jogador> jogadoresDaEquipe;
 	
-	public Equipe (String nomeDaEquipe, short anoDeFormacao, Nivel nivelTotalDaEquipe, Regiao regiaoDaEquipe, List<Jogador> jogadoresDaEquipe) {
+	public Equipe (String nomeDaEquipe, short anoDeFormacao, double nivelTotalDaEquipe, Regiao regiaoDaEquipe, List<Jogador> jogadoresDaEquipe) {
 		this.nomeDaEquipe = nomeDaEquipe;
 		this.anoDeFormacao = anoDeFormacao;
 		this.nivelTotalDaEquipe = nivelTotalDaEquipe;
@@ -46,7 +45,7 @@ public class Equipe {
 		return anoDeFormacao;
 	}
 
-	public Nivel getNivelTotalDaEquipe() {
+	public double getNivelTotalDaEquipe() {
 		return nivelTotalDaEquipe;
 	}
 

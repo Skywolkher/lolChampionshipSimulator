@@ -5,11 +5,11 @@ public class Jogador {
 	private String nomeDoJogador;
 	private String nickName;
 	private Posicao posicaoDoJogador;
-	private Nivel nivelIndividual;
+	private double nivelIndividual;
 	private Regiao regiao;
 	private double taxaDeEvolucao;
 	
-	public Jogador (String nomeDoJogador, String nickName, Posicao posicaoDoJogador, Nivel nivelIndividual, Regiao regiao, double taxaDeEvolucao) {
+	public Jogador (String nomeDoJogador, String nickName, Posicao posicaoDoJogador, double nivelIndividual, Regiao regiao, double taxaDeEvolucao) {
 		this.nomeDoJogador = nomeDoJogador;
 		this.nickName = nickName;
 		this.posicaoDoJogador = posicaoDoJogador;
@@ -42,11 +42,11 @@ public class Jogador {
 		this.posicaoDoJogador = posicaoDoJogador;
 	}
 
-	public Nivel getNivelIndividual() {
+	public double getNivelIndividual() {
 		return nivelIndividual;
 	}
 
-	public void setNivelIndividual(Nivel nivelIndividual) {
+	public void setNivelIndividual(double nivelIndividual) {
 		this.nivelIndividual = nivelIndividual;
 	}
 
