@@ -56,6 +56,28 @@ public class Equipe {
 	public List<Jogador> getJogadoresDaEquipe() {
 		return jogadoresDaEquipe;
 	}
-	
 
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Equipe other = (Equipe) obj;
+		if (nomeDaEquipe == null) {
+			if (other.nomeDaEquipe != null)
+				return false;
+		} else if (!nomeDaEquipe.equals(other.nomeDaEquipe))
+			return false;
+		if (regiaoDaEquipe != other.regiaoDaEquipe)
+			return false;
+		return true;
+	}
+	
+	@Override
+	public String toString() {
+		return (this.nomeDaEquipe);
+	}
 }

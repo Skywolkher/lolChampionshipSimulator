@@ -1,4 +1,4 @@
-package database;
+package lolChampionshipSimulator.database;
 
 public class DbException extends RuntimeException{
 

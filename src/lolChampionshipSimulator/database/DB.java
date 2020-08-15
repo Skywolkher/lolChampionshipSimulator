@@ -1,4 +1,4 @@
-package database;
+package lolChampionshipSimulator.database;
 
 import java.io.FileInputStream;
 import java.io.IOException;

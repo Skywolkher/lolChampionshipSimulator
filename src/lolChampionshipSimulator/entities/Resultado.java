@@ -41,5 +41,8 @@ public class Resultado {
 		this.equipeB = equipeB;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return (this.equipeA + " x " + this.equipeB + " Vencedor: " + this.equipeVencedora);
+	}
 }
